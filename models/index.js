@@ -6,7 +6,7 @@ const Comment = require('./Comment');
 // Define associations
 User.hasMany(Post, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE',
+  onDelete: 'CASCADE', // If a user is deleted, delete all associated posts
 });
 
 User.hasMany(Comment, {
