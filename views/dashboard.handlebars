@@ -1,1 +1,13 @@
 {{!-- Dashboard view --}}
+{{#extend "layouts/main"}}
+{{#content "body"}}
+    <section class="dashboard">
+        <h2>Your Dashboard</h2>
+        <a href="/new" class="btn">Create New Post</a>
+        {{#if posts.length}}
+            {{> post-list}}
+        {{else}}
+            <p>You haven't created any posts yet.</p>
+        {{/if}}
+    </section>
+{{/content}}

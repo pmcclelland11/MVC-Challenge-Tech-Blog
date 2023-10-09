@@ -1,1 +1,8 @@
 {{!-- Homepage view --}}
+{{#extend "layouts/main"}}
+{{#content "body"}}
+    <section class="posts">
+        <h2>Recent Posts</h2>
+        {{> post-list}}
+    </section>
+{{/content}}
