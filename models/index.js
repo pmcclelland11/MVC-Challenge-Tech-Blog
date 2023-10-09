@@ -1,0 +1,1 @@
+// Initializes and associates Sequelize models
